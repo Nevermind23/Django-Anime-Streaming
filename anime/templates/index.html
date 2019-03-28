@@ -1,0 +1,8 @@
+{% extends 'main.html' %}
+
+{% block title %}Main Page{% endblock %}
+{% block content %}
+  {% for anime in animes %}
+    <a href="/anime/{{anime.id}}/{{anime.title|slugify}}">{{anime.title}}</a> <br>
+  {% endfor %}
+{% endblock %}

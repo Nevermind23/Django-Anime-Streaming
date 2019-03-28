@@ -1,0 +1,10 @@
+{% extends 'main.html' %}
+
+{% block content %}
+  {{ anime.title }} <br>
+  {{ anime.description }}
+  <br>
+  {% for episode in episodes %}
+    {{ episode.episode_id }} სერია <br>
+  {% endfor %}
+{% endblock %}
